@@ -1,0 +1,21 @@
+<h1>String interpolation</h1>
+<p>
+  {{ strIn }} | {{ numberIn }}
+</p>
+
+<hr>
+<h1>Property binding</h1>
+<input type="text" [value]="strIn">
+<p [ngStyle]="{color: 'green'}">Is this styled?</p>
+
+<h3>Custom property binding</h3>
+
+<app-property-binding [result]="10"></app-property-binding>
+
+<hr>
+<h3>Eveent binding</h3>
+<app-event-binding (clickable)="onClicked($event)" ></app-event-binding>
+
+<hr>
+<h3>Two-way binding</h3>
+<app-two-way-binding></app-two-way-binding>
